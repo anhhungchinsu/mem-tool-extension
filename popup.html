@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 450px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .radio-active {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Kích hoạt tool</p>
+
+        <div class="radio-active">
+            <input type="radio" id="on" name="active" value="on">
+            <label for="on">ON</label><br>
+        </div>
+        <div class="radio-active">
+            <input type="radio" id="off" name="active" value="off">
+            <label for="off">OFF</label>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <p>Crawl data</p>
+
+        <button id="btnCrawlData">Crawl</button>
+    </div>
+    <hr>
+    <div class="container">
+        <p>Add new word</p>
+        <input type="text" id="txtVietnamese" name="vietnamese" placeholder="Vietnamese meaning here!"> <span style="font-weight: 900;">:</span>
+        <input type="text" id="txtEnglish" name="english" placeholder="English meaning here!">
+        <button id="btnAddNewWord">Add to dict</button>
+    </div>
+
+    <script src="./popup_script.js"></script>
+</body>
+
+</html>
